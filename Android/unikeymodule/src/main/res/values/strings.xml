@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">UniKeyModule</string>
+    <string name="keystore_alias">UniKeyModule</string>
+    <string name="keystore_algorithm">RSA</string>
+    <string name="key_provider">AndroidKeyStore</string>
+    <string name="cipher_algorithm">RSA/ECB/PKCS1Padding</string>
+    <string name="hash_algorithm">SHA-256</string>
+
+</resources>
+
