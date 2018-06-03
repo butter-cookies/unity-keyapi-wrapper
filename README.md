@@ -29,6 +29,6 @@ https://github.com/TheLevelUp/LUKeychainAccess
 
 > Editorでの挙動
 
-Application.persistentDataPath直下にKeyModule.xmlファイルを生成して管理します。
-このファイルは本番では生成されない想定なので、暗号化を施さずに平文のままにしています。
-Id/Passといったデータの書き換えを行うデバッグを容易に行えます。
+Application.persistentDataPath直下にKeyModule.xmlファイルを生成して管理します。<br>
+このファイルは本番では生成されない想定なので、暗号化を施さずに平文のままにしています。<br>
+Id/Passといったデータの書き換えを行うデバッグを容易に行えます。<br>
