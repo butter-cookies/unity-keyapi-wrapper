@@ -1,31 +1,39 @@
 # unity-keymodule-wrapper
 
-> 概要
+## Introduction
 
 各モバイルOSが提供しているセキュアにデータを保存するためのApi(Keychain(iOS), Keystore(Android))をUnityで利用するためのラッパーコードです。
 
-> 動作環境
+## Required
 
-Unity5.6+<br>
-iOS5.0+, Android4.3+<br>
+> Unity5.6+<br>
+> iOS5.0+, Android4.3+
 
-> Api
+## Api
 
-* SetString<br>
+> SetString
+
 キーと値を紐づけて保存します。
-* GetString<br>
+
+> GetString
+
 キーに紐づく値を取得します。
-* HasKey<br>
+
+> HasKey
 キーが保存されているか調べます。
-* DeleteKey<br>
+
+> DeleteKey
 キーとキーに紐づく値を削除します。
-* DeleteAll<br>
+
+> DeleteAll
 すべてのキーと値を削除します。
 
-> ライブラリ
+## Library
 
 LuKeychainAccess<br>
 https://github.com/TheLevelUp/LUKeychainAccess
+
+## Note
 
 > Editorでの挙動
 
