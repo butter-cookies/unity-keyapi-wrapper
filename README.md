@@ -11,31 +11,35 @@
 
 ## Api
 
-> SetString
+#### SetString
 
 キーと値を紐づけて保存します。
 
-> GetString
+#### GetString
 
 キーに紐づく値を取得します。
 
-> HasKey
+#### HasKey
+
 キーが保存されているか調べます。
 
-> DeleteKey
+#### DeleteKey
+
 キーとキーに紐づく値を削除します。
 
-> DeleteAll
+#### DeleteAll
+
 すべてのキーと値を削除します。
 
 ## Library
 
-LuKeychainAccess<br>
+#### LuKeychainAccess
+
 https://github.com/TheLevelUp/LUKeychainAccess
 
 ## Note
 
-> Editorでの挙動
+#### Editorでの挙動
 
 Application.persistentDataPath直下にKeyModule.xmlファイルを生成して管理します。<br>
 このファイルは本番では生成されない想定なので、暗号化を施さずに平文のままにしています。<br>
