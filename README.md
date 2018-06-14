@@ -1,21 +1,46 @@
-# UniKeyModule(beta)
-
-## What is UniKeyModule?
-UniKeyModule is implemention that can save safety important infomation such as UserId, Password or UserToken in Unity Mobile Application.<br>
-
-## Why Secure?
-UniKeyModule binds Android/iOS secure API.<br>
-If you run App in Android, UniKeyModule uses KeyStore API. Otherwise, If you run App in iOS, UniKeyModule uses KeychainAPI.<br>
-These API is Generally speaking of the most secure in Each OS.<br>
-
-## Requirements
-UniKeyModule requires iOS5.0+, Android4.3+.<br>
+# unity-keymodule-wrapper
 
 ## Introduction
-UniKeyModule provides simple API.<br>
 
-* GetString
-* SetString
-* HasKey
-* DeleteKey
-* DeleteAll
+各モバイルOSが提供しているセキュアにデータを保存するためのApi(Keychain(iOS), Keystore(Android))をUnityで利用するためのラッパーコードです。
+
+## Required
+
+> Unity5.6+<br>
+> iOS5.0+, Android4.3+
+
+## Api
+
+#### SetString
+
+キーと値を紐づけて保存します。
+
+#### GetString
+
+キーに紐づく値を取得します。
+
+#### HasKey
+
+キーが保存されているか調べます。
+
+#### DeleteKey
+
+キーとキーに紐づく値を削除します。
+
+#### DeleteAll
+
+すべてのキーと値を削除します。
+
+## Library
+
+#### LuKeychainAccess
+
+https://github.com/TheLevelUp/LUKeychainAccess
+
+## Note
+
+#### Editorでの挙動
+
+Application.persistentDataPath直下にKeyModule.xmlファイルを生成して管理します。<br>
+このファイルは本番では生成されない想定なので、暗号化を施さずに平文のままにしています。<br>
+Id/Passといったデータの書き換えを行うデバッグを容易に行えます。<br>
