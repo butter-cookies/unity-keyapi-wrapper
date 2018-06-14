@@ -1,0 +1,190 @@
+\hypertarget{class_siege_module_1_1_uni_key_module_other}{}\section{Siege\+Module.\+Uni\+Key\+Module\+Other Class Reference}
+\label{class_siege_module_1_1_uni_key_module_other}\index{Siege\+Module.\+Uni\+Key\+Module\+Other@{Siege\+Module.\+Uni\+Key\+Module\+Other}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_siege_module_1_1_uni_key_module_other_1_1_k_v}{KV}}
+\begin{DoxyCompactList}\small\item\em key-\/value data structure. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{struct_siege_module_1_1_uni_key_module_string}{Uni\+Key\+Module\+String}} \mbox{\hyperlink{class_siege_module_1_1_uni_key_module_other_af31fe254c5de6ef3f85001865801d0af}{Get\+String}} (string key)
+\begin{DoxyCompactList}\small\item\em get value from cache. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{class_siege_module_1_1_uni_key_module_other_a3c863fcdc7762d02692f88f18240ed4c}{Set\+String}} (string key, string value)
+\begin{DoxyCompactList}\small\item\em set value to cache and xml. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{struct_siege_module_1_1_uni_key_module_boolean}{Uni\+Key\+Module\+Boolean}} \mbox{\hyperlink{class_siege_module_1_1_uni_key_module_other_adb8428817e6364d8cf1417c8806f9b80}{Has\+Key}} (string key)
+\begin{DoxyCompactList}\small\item\em confirm that cache contains key \end{DoxyCompactList}\item 
+static Error\+Code \mbox{\hyperlink{class_siege_module_1_1_uni_key_module_other_a273d7ae437e207ed153e5233e0887297}{Delete\+Key}} (string key)
+\begin{DoxyCompactList}\small\item\em delete a data from cache and xml. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{class_siege_module_1_1_uni_key_module_other_adc5fcb32fc28119ca512c842f11d1d12}{Delete\+All}} ()
+\begin{DoxyCompactList}\small\item\em delete all data from cache and xml. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_siege_module_1_1_uni_key_module_other_ab7a64f84ab192cb186c60116b65d4c4b}{Uni\+Key\+Module\+Other}} ()
+\begin{DoxyCompactList}\small\item\em static constructor when program is starting, it deserialize data from xml-\/file, if xml-\/file existed. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_siege_module_1_1_uni_key_module_other_a9edb18f38f81b27348138c8cd13ead32}{Serialize}} ()
+\begin{DoxyCompactList}\small\item\em serialize cache and create xml file. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_siege_module_1_1_uni_key_module_other_a705e91fd483e35dee3dca4328ec1c939}{Deserialize}} ()
+\begin{DoxyCompactList}\small\item\em deserialize xml file and arrange to cache. \end{DoxyCompactList}\item 
+static string \mbox{\hyperlink{class_siege_module_1_1_uni_key_module_other_a5fd17dc4ef93fddb66a5d47d48fd5e0c}{Get\+File\+Path}} ()
+\begin{DoxyCompactList}\small\item\em get path about destination xml file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static List$<$ \mbox{\hyperlink{struct_siege_module_1_1_uni_key_module_other_1_1_k_v}{KV}} $>$ \mbox{\hyperlink{class_siege_module_1_1_uni_key_module_other_ad7b2adc7e9aae7e1bce9cda54ffd4f40}{cache}} = new List$<$\mbox{\hyperlink{struct_siege_module_1_1_uni_key_module_other_1_1_k_v}{KV}}$>$()
+\begin{DoxyCompactList}\small\item\em cache on memory. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_siege_module_1_1_uni_key_module_other_ab7a64f84ab192cb186c60116b65d4c4b}\label{class_siege_module_1_1_uni_key_module_other_ab7a64f84ab192cb186c60116b65d4c4b}} 
+\index{Siege\+Module\+::\+Uni\+Key\+Module\+Other@{Siege\+Module\+::\+Uni\+Key\+Module\+Other}!Uni\+Key\+Module\+Other@{Uni\+Key\+Module\+Other}}
+\index{Uni\+Key\+Module\+Other@{Uni\+Key\+Module\+Other}!Siege\+Module\+::\+Uni\+Key\+Module\+Other@{Siege\+Module\+::\+Uni\+Key\+Module\+Other}}
+\subsubsection{\texorpdfstring{Uni\+Key\+Module\+Other()}{UniKeyModuleOther()}}
+{\footnotesize\ttfamily static Siege\+Module.\+Uni\+Key\+Module\+Other.\+Uni\+Key\+Module\+Other (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+static constructor when program is starting, it deserialize data from xml-\/file, if xml-\/file existed. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_siege_module_1_1_uni_key_module_other_adc5fcb32fc28119ca512c842f11d1d12}\label{class_siege_module_1_1_uni_key_module_other_adc5fcb32fc28119ca512c842f11d1d12}} 
+\index{Siege\+Module\+::\+Uni\+Key\+Module\+Other@{Siege\+Module\+::\+Uni\+Key\+Module\+Other}!Delete\+All@{Delete\+All}}
+\index{Delete\+All@{Delete\+All}!Siege\+Module\+::\+Uni\+Key\+Module\+Other@{Siege\+Module\+::\+Uni\+Key\+Module\+Other}}
+\subsubsection{\texorpdfstring{Delete\+All()}{DeleteAll()}}
+{\footnotesize\ttfamily static int Siege\+Module.\+Uni\+Key\+Module\+Other.\+Delete\+All (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+delete all data from cache and xml. 
+
+\begin{DoxyReturn}{Returns}
+error code
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_siege_module_1_1_uni_key_module_other_a273d7ae437e207ed153e5233e0887297}\label{class_siege_module_1_1_uni_key_module_other_a273d7ae437e207ed153e5233e0887297}} 
+\index{Siege\+Module\+::\+Uni\+Key\+Module\+Other@{Siege\+Module\+::\+Uni\+Key\+Module\+Other}!Delete\+Key@{Delete\+Key}}
+\index{Delete\+Key@{Delete\+Key}!Siege\+Module\+::\+Uni\+Key\+Module\+Other@{Siege\+Module\+::\+Uni\+Key\+Module\+Other}}
+\subsubsection{\texorpdfstring{Delete\+Key()}{DeleteKey()}}
+{\footnotesize\ttfamily static Error\+Code Siege\+Module.\+Uni\+Key\+Module\+Other.\+Delete\+Key (\begin{DoxyParamCaption}\item[{string}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+delete a data from cache and xml. 
+
+\begin{DoxyReturn}{Returns}
+error code
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em key} & key\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_siege_module_1_1_uni_key_module_other_a705e91fd483e35dee3dca4328ec1c939}\label{class_siege_module_1_1_uni_key_module_other_a705e91fd483e35dee3dca4328ec1c939}} 
+\index{Siege\+Module\+::\+Uni\+Key\+Module\+Other@{Siege\+Module\+::\+Uni\+Key\+Module\+Other}!Deserialize@{Deserialize}}
+\index{Deserialize@{Deserialize}!Siege\+Module\+::\+Uni\+Key\+Module\+Other@{Siege\+Module\+::\+Uni\+Key\+Module\+Other}}
+\subsubsection{\texorpdfstring{Deserialize()}{Deserialize()}}
+{\footnotesize\ttfamily static void Siege\+Module.\+Uni\+Key\+Module\+Other.\+Deserialize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+deserialize xml file and arrange to cache. 
+
+\mbox{\Hypertarget{class_siege_module_1_1_uni_key_module_other_a5fd17dc4ef93fddb66a5d47d48fd5e0c}\label{class_siege_module_1_1_uni_key_module_other_a5fd17dc4ef93fddb66a5d47d48fd5e0c}} 
+\index{Siege\+Module\+::\+Uni\+Key\+Module\+Other@{Siege\+Module\+::\+Uni\+Key\+Module\+Other}!Get\+File\+Path@{Get\+File\+Path}}
+\index{Get\+File\+Path@{Get\+File\+Path}!Siege\+Module\+::\+Uni\+Key\+Module\+Other@{Siege\+Module\+::\+Uni\+Key\+Module\+Other}}
+\subsubsection{\texorpdfstring{Get\+File\+Path()}{GetFilePath()}}
+{\footnotesize\ttfamily static string Siege\+Module.\+Uni\+Key\+Module\+Other.\+Get\+File\+Path (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+get path about destination xml file. 
+
+\begin{DoxyReturn}{Returns}
+file path
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_siege_module_1_1_uni_key_module_other_af31fe254c5de6ef3f85001865801d0af}\label{class_siege_module_1_1_uni_key_module_other_af31fe254c5de6ef3f85001865801d0af}} 
+\index{Siege\+Module\+::\+Uni\+Key\+Module\+Other@{Siege\+Module\+::\+Uni\+Key\+Module\+Other}!Get\+String@{Get\+String}}
+\index{Get\+String@{Get\+String}!Siege\+Module\+::\+Uni\+Key\+Module\+Other@{Siege\+Module\+::\+Uni\+Key\+Module\+Other}}
+\subsubsection{\texorpdfstring{Get\+String()}{GetString()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{struct_siege_module_1_1_uni_key_module_string}{Uni\+Key\+Module\+String}} Siege\+Module.\+Uni\+Key\+Module\+Other.\+Get\+String (\begin{DoxyParamCaption}\item[{string}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+get value from cache. 
+
+\begin{DoxyReturn}{Returns}
+value + error code.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em key} & key\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_siege_module_1_1_uni_key_module_other_adb8428817e6364d8cf1417c8806f9b80}\label{class_siege_module_1_1_uni_key_module_other_adb8428817e6364d8cf1417c8806f9b80}} 
+\index{Siege\+Module\+::\+Uni\+Key\+Module\+Other@{Siege\+Module\+::\+Uni\+Key\+Module\+Other}!Has\+Key@{Has\+Key}}
+\index{Has\+Key@{Has\+Key}!Siege\+Module\+::\+Uni\+Key\+Module\+Other@{Siege\+Module\+::\+Uni\+Key\+Module\+Other}}
+\subsubsection{\texorpdfstring{Has\+Key()}{HasKey()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{struct_siege_module_1_1_uni_key_module_boolean}{Uni\+Key\+Module\+Boolean}} Siege\+Module.\+Uni\+Key\+Module\+Other.\+Has\+Key (\begin{DoxyParamCaption}\item[{string}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+confirm that cache contains key 
+
+\begin{DoxyReturn}{Returns}
+value + error code
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em key} & key\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_siege_module_1_1_uni_key_module_other_a9edb18f38f81b27348138c8cd13ead32}\label{class_siege_module_1_1_uni_key_module_other_a9edb18f38f81b27348138c8cd13ead32}} 
+\index{Siege\+Module\+::\+Uni\+Key\+Module\+Other@{Siege\+Module\+::\+Uni\+Key\+Module\+Other}!Serialize@{Serialize}}
+\index{Serialize@{Serialize}!Siege\+Module\+::\+Uni\+Key\+Module\+Other@{Siege\+Module\+::\+Uni\+Key\+Module\+Other}}
+\subsubsection{\texorpdfstring{Serialize()}{Serialize()}}
+{\footnotesize\ttfamily static void Siege\+Module.\+Uni\+Key\+Module\+Other.\+Serialize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+serialize cache and create xml file. 
+
+\mbox{\Hypertarget{class_siege_module_1_1_uni_key_module_other_a3c863fcdc7762d02692f88f18240ed4c}\label{class_siege_module_1_1_uni_key_module_other_a3c863fcdc7762d02692f88f18240ed4c}} 
+\index{Siege\+Module\+::\+Uni\+Key\+Module\+Other@{Siege\+Module\+::\+Uni\+Key\+Module\+Other}!Set\+String@{Set\+String}}
+\index{Set\+String@{Set\+String}!Siege\+Module\+::\+Uni\+Key\+Module\+Other@{Siege\+Module\+::\+Uni\+Key\+Module\+Other}}
+\subsubsection{\texorpdfstring{Set\+String()}{SetString()}}
+{\footnotesize\ttfamily static int Siege\+Module.\+Uni\+Key\+Module\+Other.\+Set\+String (\begin{DoxyParamCaption}\item[{string}]{key,  }\item[{string}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+set value to cache and xml. 
+
+\begin{DoxyReturn}{Returns}
+error code
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em key} & key\\
+\hline
+{\em value} & value\\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_siege_module_1_1_uni_key_module_other_ad7b2adc7e9aae7e1bce9cda54ffd4f40}\label{class_siege_module_1_1_uni_key_module_other_ad7b2adc7e9aae7e1bce9cda54ffd4f40}} 
+\index{Siege\+Module\+::\+Uni\+Key\+Module\+Other@{Siege\+Module\+::\+Uni\+Key\+Module\+Other}!cache@{cache}}
+\index{cache@{cache}!Siege\+Module\+::\+Uni\+Key\+Module\+Other@{Siege\+Module\+::\+Uni\+Key\+Module\+Other}}
+\subsubsection{\texorpdfstring{cache}{cache}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{struct_siege_module_1_1_uni_key_module_other_1_1_k_v}{KV}}$>$ Siege\+Module.\+Uni\+Key\+Module\+Other.\+cache = new List$<$\mbox{\hyperlink{struct_siege_module_1_1_uni_key_module_other_1_1_k_v}{KV}}$>$()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+cache on memory. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Plugins/unikeymodule/\+Other/Uni\+Key\+Module\+Other.\+cs\end{DoxyCompactItemize}
