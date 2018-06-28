@@ -77,14 +77,12 @@
 }
 @end
 
-struct UniKeyModuleString
-{
+struct UniKeyModuleString {
     char* value;
     int errorCode;
 };
 
-struct UniKeyModuleBoolean
-{
+struct UniKeyModuleBoolean {
     bool value;
     int errorCode;
 };
