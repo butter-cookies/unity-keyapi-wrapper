@@ -11,25 +11,13 @@
 
 ## Api
 
-#### SetString
-
-キーと値を紐づけて保存します。
-
-#### GetString
-
-キーに紐づく値を取得します。
-
-#### HasKey
-
-キーが保存されているか調べます。
-
-#### DeleteKey
-
-キーとキーに紐づく値を削除します。
-
-#### DeleteAll
-
-すべてのキーと値を削除します。
+| Api | Description |
+| --- | --- |
+| SetString | キーと値を紐づけて保存します。 |
+| GetString | キーに紐づく値を取得します。 |
+| HasKey | キーが保存されているか調べます。 |
+| DeleteKey | キーとキーに紐づく値を削除します。 |
+| DeleteAll | すべてのキーと値を削除します。 |
 
 ## Library
 
