@@ -2,12 +2,16 @@
 
 ## Introduction
 
-各モバイルOSが提供しているセキュアにデータを保存するためのApi(Keychain(iOS), Keystore(Android))をUnityで利用するためのラッパーコードです。
+モバイルOSが提供しているセキュアにデータを保存するためのApiをUnityで利用するためのラッパーコードです。
 
 ## Required
 
 > Unity5.6+<br>
 > iOS5.0+, Android4.3+
+
+## Keychain(iOS)
+
+## KeyStore(Android)
 
 ## Api
 
